@@ -1,0 +1,9 @@
+1. use continuity of lane lines from frame to frame (start continuity check from high confidence figures)
+
+2. k-Means clustering for Hough lines
+
+3. Vanishing point detection using Gaussian probability model
+
+Kalman/Gabor/RANSAC filtering of sampled data
+KLT (Kanade-Lucas-Tomasi) feature tracker for vehicle tracking
+Better lane tracking(probability methods), stability & accuracy
