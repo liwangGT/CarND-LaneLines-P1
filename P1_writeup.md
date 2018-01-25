@@ -30,7 +30,7 @@ My pipeline for detecting lane line consists of the following steps. Note that t
 
 5. Apply hough line detection algorithm to detect all lines in the interested region. The max/min line length/gap parameters are tuned such that most lane lines can be detected with minimal amount of undesired lines.
 
-6. Postprocessing on the detected lines to extract two lane lines. K-mean clustering algorithm is applied by assuming there are two cluster centers. The lines representation are converted back to the hough space representation (rho, theta), which avoids the invalid infinite slope case.
+6. Postprocessing on the detected lines to extract two lane lines. K-mean clustering algorithm is applied by assuming there are two cluster centers. The lines representation are converted back to the hough space representation (rho, theta), which avoids the invalid infinite slope case. Note that K-mean clustering is similar to averaging the (rho, theta) pairs to two cluster centers.
 
 ### 2. Potential shortcomings with my current pipeline
 
